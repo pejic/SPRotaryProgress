@@ -13,7 +13,6 @@
 		8FE7BEF414E5CC5A008D4BDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7BEF214E5CC5A008D4BDE /* InfoPlist.strings */; };
 		8FE7BEF614E5CC5A008D4BDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7BEF514E5CC5A008D4BDE /* main.m */; };
 		8FE7BEFA14E5CC5A008D4BDE /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7BEF914E5CC5A008D4BDE /* SPAppDelegate.m */; };
-		8FE7BF0314E5CC5A008D4BDE /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7BF0214E5CC5A008D4BDE /* SPViewController.m */; };
 		8FE7BF0B14E5CC5A008D4BDE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BF0A14E5CC5A008D4BDE /* SenTestingKit.framework */; };
 		8FE7BF0C14E5CC5A008D4BDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BEE914E5CC5A008D4BDE /* UIKit.framework */; };
 		8FE7BF0D14E5CC5A008D4BDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BEEB14E5CC5A008D4BDE /* Foundation.framework */; };
@@ -47,8 +46,6 @@
 		8FE7BEF714E5CC5A008D4BDE /* EX005-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EX005-Prefix.pch"; sourceTree = "<group>"; };
 		8FE7BEF814E5CC5A008D4BDE /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		8FE7BEF914E5CC5A008D4BDE /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
-		8FE7BF0114E5CC5A008D4BDE /* SPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
-		8FE7BF0214E5CC5A008D4BDE /* SPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
 		8FE7BF0914E5CC5A008D4BDE /* EX005Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EX005Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE7BF0A14E5CC5A008D4BDE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8FE7BF1214E5CC5A008D4BDE /* EX005Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EX005Tests-Info.plist"; sourceTree = "<group>"; };
@@ -125,8 +122,6 @@
 			children = (
 				8FE7BEF814E5CC5A008D4BDE /* SPAppDelegate.h */,
 				8FE7BEF914E5CC5A008D4BDE /* SPAppDelegate.m */,
-				8FE7BF0114E5CC5A008D4BDE /* SPViewController.h */,
-				8FE7BF0214E5CC5A008D4BDE /* SPViewController.m */,
 				8FE7BEF014E5CC5A008D4BDE /* Supporting Files */,
 				8FE7BF2114E5CEDC008D4BDE /* SPProgressView.h */,
 				8FE7BF2214E5CEDC008D4BDE /* SPProgressView.m */,
@@ -277,7 +272,6 @@
 			files = (
 				8FE7BEF614E5CC5A008D4BDE /* main.m in Sources */,
 				8FE7BEFA14E5CC5A008D4BDE /* SPAppDelegate.m in Sources */,
-				8FE7BF0314E5CC5A008D4BDE /* SPViewController.m in Sources */,
 				8FE7BF2314E5CEDC008D4BDE /* SPProgressView.m in Sources */,
 				8FE7BF2614E5CF35008D4BDE /* SPProgressLayer.m in Sources */,
 			);
@@ -325,7 +319,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -341,7 +338,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -351,7 +348,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -360,7 +360,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +374,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EX005/EX005-Prefix.pch";
 				INFOPLIST_FILE = "EX005/EX005-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -387,7 +386,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EX005/EX005-Prefix.pch";
 				INFOPLIST_FILE = "EX005/EX005-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -447,6 +445,7 @@
 				8FE7BF1D14E5CC5A008D4BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FE7BF1E14E5CC5A008D4BDE /* Build configuration list for PBXNativeTarget "EX005Tests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +454,7 @@
 				8FE7BF2014E5CC5A008D4BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
