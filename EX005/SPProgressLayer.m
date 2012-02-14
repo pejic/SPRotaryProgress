@@ -61,7 +61,7 @@
 	CGContextBeginPath(g);
 	CGContextAddPath(g, path);
 	
-	CGContextSetRGBFillColor(g, 0.2, 0.2, 0.2, 0.5);
+	CGContextSetRGBFillColor(g, 0.2, 0.2, 0.2, 0.6);
 	CGContextFillPath(g);
 	
 	
@@ -69,7 +69,7 @@
 	path = CGPathCreateMutable();
 	
 	// progress arc
-	CGPathAddArc(path, NULL, c.x, c.y, 7.0/8.0 * size2, sa, ea, FALSE);
+	CGPathAddArc(path, NULL, c.x, c.y, 3.0/4.0 * size2, sa, ea, FALSE);
 	
 	CGContextBeginPath(g);
 	CGContextAddPath(g, path);
@@ -79,6 +79,24 @@
 	CGContextStrokePath(g);
 	
 	CFRelease(path);
+
+	CGContextSelectFont(g, "Helvetica", 12, kCGEncodingMacRoman);
+	CGContextSetTextDrawingMode(g, kCGTextFill);
+	CGContextSetRGBFillColor(g, 1.0, 1.0, 1.0, 1.0);
+	CGAffineTransform tt = CGContextGetTextMatrix(g);
+	tt = CGAffineTransformTranslate(tt, 0, bounds.size.height);
+	tt = CGAffineTransformScale(tt, 1, -1);
+	CGContextSetTextMatrix(g, tt);
+	char buff[24] = "";
+	int percent = (int)(progress * 100 + 0.5);
+	sprintf(buff, "%d%%", percent);
+	if (percent < 10) {
+		CGContextShowTextAtPoint(g, c.x-2.2, c.y+6,
+					 buff, strlen(buff));
+	}
+	else {
+		CGContextShowTextAtPoint(g, c.x-8, c.y+6, buff, strlen(buff));
+	}
 }
 
 @end
