@@ -13,8 +13,6 @@
 		8FE7BEF414E5CC5A008D4BDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7BEF214E5CC5A008D4BDE /* InfoPlist.strings */; };
 		8FE7BEF614E5CC5A008D4BDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7BEF514E5CC5A008D4BDE /* main.m */; };
 		8FE7BEFA14E5CC5A008D4BDE /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7BEF914E5CC5A008D4BDE /* SPAppDelegate.m */; };
-		8FE7BEFD14E5CC5A008D4BDE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7BEFB14E5CC5A008D4BDE /* MainStoryboard_iPhone.storyboard */; };
-		8FE7BF0014E5CC5A008D4BDE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7BEFE14E5CC5A008D4BDE /* MainStoryboard_iPad.storyboard */; };
 		8FE7BF0314E5CC5A008D4BDE /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7BF0214E5CC5A008D4BDE /* SPViewController.m */; };
 		8FE7BF0B14E5CC5A008D4BDE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BF0A14E5CC5A008D4BDE /* SenTestingKit.framework */; };
 		8FE7BF0C14E5CC5A008D4BDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BEE914E5CC5A008D4BDE /* UIKit.framework */; };
@@ -24,6 +22,8 @@
 		8FE7BF2314E5CEDC008D4BDE /* SPProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7BF2214E5CEDC008D4BDE /* SPProgressView.m */; };
 		8FE7BF2614E5CF35008D4BDE /* SPProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7BF2514E5CF35008D4BDE /* SPProgressLayer.m */; };
 		8FE7BF2914E5D398008D4BDE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BF2714E5D390008D4BDE /* QuartzCore.framework */; };
+		8FE7BF2B14EAF641008D4BDE /* RotaryProgress_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7BF2A14EAF640008D4BDE /* RotaryProgress_iPhone.xib */; };
+		8FE7BF2D14EAF794008D4BDE /* RotaryProgress_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7BF2C14EAF794008D4BDE /* RotaryProgress_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,6 @@
 		8FE7BEF714E5CC5A008D4BDE /* EX005-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EX005-Prefix.pch"; sourceTree = "<group>"; };
 		8FE7BEF814E5CC5A008D4BDE /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		8FE7BEF914E5CC5A008D4BDE /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
-		8FE7BEFC14E5CC5A008D4BDE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		8FE7BEFF14E5CC5A008D4BDE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8FE7BF0114E5CC5A008D4BDE /* SPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
 		8FE7BF0214E5CC5A008D4BDE /* SPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
 		8FE7BF0914E5CC5A008D4BDE /* EX005Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EX005Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +60,8 @@
 		8FE7BF2414E5CF35008D4BDE /* SPProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPProgressLayer.h; sourceTree = "<group>"; };
 		8FE7BF2514E5CF35008D4BDE /* SPProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPProgressLayer.m; sourceTree = "<group>"; };
 		8FE7BF2714E5D390008D4BDE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8FE7BF2A14EAF640008D4BDE /* RotaryProgress_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RotaryProgress_iPhone.xib; sourceTree = "<group>"; };
+		8FE7BF2C14EAF794008D4BDE /* RotaryProgress_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RotaryProgress_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,6 @@
 			children = (
 				8FE7BEF814E5CC5A008D4BDE /* SPAppDelegate.h */,
 				8FE7BEF914E5CC5A008D4BDE /* SPAppDelegate.m */,
-				8FE7BEFB14E5CC5A008D4BDE /* MainStoryboard_iPhone.storyboard */,
-				8FE7BEFE14E5CC5A008D4BDE /* MainStoryboard_iPad.storyboard */,
 				8FE7BF0114E5CC5A008D4BDE /* SPViewController.h */,
 				8FE7BF0214E5CC5A008D4BDE /* SPViewController.m */,
 				8FE7BEF014E5CC5A008D4BDE /* Supporting Files */,
@@ -134,6 +132,8 @@
 				8FE7BF2214E5CEDC008D4BDE /* SPProgressView.m */,
 				8FE7BF2414E5CF35008D4BDE /* SPProgressLayer.h */,
 				8FE7BF2514E5CF35008D4BDE /* SPProgressLayer.m */,
+				8FE7BF2A14EAF640008D4BDE /* RotaryProgress_iPhone.xib */,
+				8FE7BF2C14EAF794008D4BDE /* RotaryProgress_iPad.xib */,
 			);
 			path = EX005;
 			sourceTree = "<group>";
@@ -239,8 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE7BEF414E5CC5A008D4BDE /* InfoPlist.strings in Resources */,
-				8FE7BEFD14E5CC5A008D4BDE /* MainStoryboard_iPhone.storyboard in Resources */,
-				8FE7BF0014E5CC5A008D4BDE /* MainStoryboard_iPad.storyboard in Resources */,
+				8FE7BF2B14EAF641008D4BDE /* RotaryProgress_iPhone.xib in Resources */,
+				8FE7BF2D14EAF794008D4BDE /* RotaryProgress_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,22 +310,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		8FE7BEFB14E5CC5A008D4BDE /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FE7BEFC14E5CC5A008D4BDE /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		8FE7BEFE14E5CC5A008D4BDE /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FE7BEFF14E5CC5A008D4BDE /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		8FE7BF1314E5CC5A008D4BDE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -390,7 +374,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EX005/EX005-Prefix.pch";
 				INFOPLIST_FILE = "EX005/EX005-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -401,7 +387,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EX005/EX005-Prefix.pch";
 				INFOPLIST_FILE = "EX005/EX005-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
