@@ -11,6 +11,8 @@
 
 @implementation SPProgressView
 
+@synthesize showPercent = _showPercent;
+
 + (id)layerClass
 {
 	return [SPProgressLayer class];
@@ -20,7 +22,7 @@
 {
 	SPProgressLayer* layer = (id) [self layer];
 	CGFloat p = layer.progress;
-	p += 0.01;
+	p += 0.007;
 	if (p > 1.0) {
 		p -= 1.0;
 	}
@@ -38,6 +40,7 @@
 	self.opaque = NO;
 	self.backgroundColor = [UIColor clearColor];
 	self.layer.contentsScale = [UIScreen mainScreen].scale;
+	self.showPercent = YES;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -57,6 +60,13 @@
 		[self __shared_init];
 	}
 	return self;
+}
+
+- (void)setShowPercent:(BOOL)showPercent
+{
+	SPProgressLayer* layer = (id) [self layer];
+	self->_showPercent = showPercent;
+	layer.showPercent = showPercent;
 }
 
 /*

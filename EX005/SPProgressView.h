@@ -10,4 +10,6 @@
 
 @interface SPProgressView : UIView
 
+@property (nonatomic, assign) BOOL showPercent;
+
 @end

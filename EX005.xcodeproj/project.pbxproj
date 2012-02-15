@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FB340F414EC3A17001A40EF /* SPOptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB340F314EC3A17001A40EF /* SPOptionController.m */; };
 		8FE7BEEA14E5CC5A008D4BDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BEE914E5CC5A008D4BDE /* UIKit.framework */; };
 		8FE7BEEC14E5CC5A008D4BDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BEEB14E5CC5A008D4BDE /* Foundation.framework */; };
 		8FE7BEEE14E5CC5A008D4BDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE7BEED14E5CC5A008D4BDE /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8FB340F214EC3A17001A40EF /* SPOptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOptionController.h; sourceTree = "<group>"; };
+		8FB340F314EC3A17001A40EF /* SPOptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOptionController.m; sourceTree = "<group>"; };
 		8FE7BEE514E5CC5A008D4BDE /* EX005.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EX005.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE7BEE914E5CC5A008D4BDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8FE7BEEB14E5CC5A008D4BDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				8FE7BF2514E5CF35008D4BDE /* SPProgressLayer.m */,
 				8FE7BF2A14EAF640008D4BDE /* RotaryProgress_iPhone.xib */,
 				8FE7BF2C14EAF794008D4BDE /* RotaryProgress_iPad.xib */,
+				8FB340F214EC3A17001A40EF /* SPOptionController.h */,
+				8FB340F314EC3A17001A40EF /* SPOptionController.m */,
 			);
 			path = EX005;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				8FE7BEFA14E5CC5A008D4BDE /* SPAppDelegate.m in Sources */,
 				8FE7BF2314E5CEDC008D4BDE /* SPProgressView.m in Sources */,
 				8FE7BF2614E5CF35008D4BDE /* SPProgressLayer.m in Sources */,
+				8FB340F414EC3A17001A40EF /* SPOptionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

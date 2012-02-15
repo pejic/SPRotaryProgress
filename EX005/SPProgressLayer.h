@@ -16,6 +16,11 @@
 @property (nonatomic, assign) CGFloat progress;
 
 /**
+ * Switch to turn the percentage text on or off.
+ */
+@property (nonatomic, assign) BOOL showPercent;
+
+/**
  * Custom drawing.
  */
 - (void)drawInContext:(CGContextRef)ctx;
