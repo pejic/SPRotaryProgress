@@ -1,0 +1,28 @@
+                   *****************************************
+                   *********** SPRotaryProgress ************
+                   *****************************************
+
+1. INTRODUCTION
+
+SPRotaryProgress is an iOS view that displays a progress in a circular area.
+It is an alternative to iOS SDK's progress bar where a square shape fits
+better.
+
+2. USAGE
+
+Copy SPProgressView.h, SPProgressView.m, SPProgressLayer.h, SPProgressView.h to
+your project.  Add QuartzCore to your target's frameworks.
+
+You can either create the view programatically or with Interface Builder.  With
+interface builder, drag a new view ("NewView") into an existing view.  Select
+NewView and change it's class to SPProgressView using the identity inspector
+(one of the tabs on the right).
+
+You can set the color of the control by assigning UIColors to SPProgressView's
+fillColor, strokeColor, and textColor properties.  The percentage is optional,
+and can be disabled via the showPercent property.
+
+3. REQUIREMENTS
+
+* iOS SDK (Tested on iOS 5.0 and iOS 4.2)
+
