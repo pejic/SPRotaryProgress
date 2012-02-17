@@ -12,6 +12,9 @@
 
 @synthesize progress = _progress;
 @synthesize showPercent = _showPercent;
+@synthesize fillColor = _fillColor;
+@synthesize strokeColor = _strokeColor;
+@synthesize textColor = _textColor;
 
 - (void)__shared_init
 {
@@ -63,6 +66,7 @@
 	CGContextAddPath(g, path);
 	
 	CGContextSetRGBFillColor(g, 0.2, 0.2, 0.2, 0.6);
+	CGContextSetFillColorWithColor(g, _fillColor);
 	CGContextFillPath(g);
 	
 	
@@ -76,7 +80,7 @@
 	CGContextAddPath(g, path);
 	
 	CGContextSetLineWidth(g, size2/8.0);
-	CGContextSetRGBStrokeColor(g, 0.75, 0.7, 0.3, 1.0);
+	CGContextSetStrokeColorWithColor(g, _strokeColor);
 	CGContextStrokePath(g);
 	
 	CFRelease(path);
@@ -84,7 +88,7 @@
 	if (_showPercent) {
 		CGContextSelectFont(g, "Helvetica", 12, kCGEncodingMacRoman);
 		CGContextSetTextDrawingMode(g, kCGTextFill);
-		CGContextSetRGBFillColor(g, 1.0, 1.0, 1.0, 1.0);
+		CGContextSetFillColorWithColor(g, _textColor);
 		CGAffineTransform tt = CGContextGetTextMatrix(g);
 		tt = CGAffineTransformTranslate(tt, 0, bounds.size.height);
 		tt = CGAffineTransformScale(tt, 1, -1);

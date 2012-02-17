@@ -9,9 +9,19 @@
 #import "SPProgressView.h"
 #import "SPProgressLayer.h"
 
+
+#ifdef __has_feature
+# define OBJC_ARC __has_feature(objc_arc)
+#else
+# define OBJC_ARC 0
+#endif
+
 @implementation SPProgressView
 
 @synthesize showPercent = _showPercent;
+@synthesize fillColor = _fillColor;
+@synthesize strokeColor = _strokeColor;
+@synthesize textColor = _textColor;
 
 + (id)layerClass
 {
@@ -41,6 +51,15 @@
 	self.backgroundColor = [UIColor clearColor];
 	self.layer.contentsScale = [UIScreen mainScreen].scale;
 	self.showPercent = YES;
+	self.fillColor = [UIColor colorWithRed:0.2
+					 green:0.2
+					  blue:0.2
+					 alpha:0.6];
+	self.strokeColor = [UIColor colorWithRed:0.75
+					   green:0.7
+					    blue:0.3
+					   alpha:1.0];
+	self.textColor = [UIColor whiteColor];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -68,6 +87,31 @@
 	self->_showPercent = showPercent;
 	layer.showPercent = showPercent;
 }
+
+#if OBJC_ARC
+# define COLOR_SETTER(BIGNAME, SMALLNAME) \
+- (void)set ## BIGNAME:(UIColor *)SMALLNAME \
+{ \
+	_ ## SMALLNAME = SMALLNAME; \
+	SPProgressLayer* layer = (id) self.layer; \
+	[layer set ## BIGNAME: [SMALLNAME CGColor]]; \
+}
+#else
+# define COLOR_SETTER(BIGNAME, SMALLNAME) \
+- (void)set ## BIGNAME:(UIColor *)SMALLNAME \
+{ \
+	[SMALLNAME retain]; \
+	[_ ## SMALLNAME release]; \
+	_ ## SMALLNAME = SMALLNAME; \
+	SPProgressLayer* layer = (id) self.layer; \
+	[layer set ## BIGNAME: [SMALLNAME CGColor]]; \
+}
+#endif
+
+COLOR_SETTER(FillColor, fillColor)
+COLOR_SETTER(StrokeColor, strokeColor)
+COLOR_SETTER(TextColor, textColor)
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

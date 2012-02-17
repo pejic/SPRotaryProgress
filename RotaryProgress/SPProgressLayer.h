@@ -21,6 +21,21 @@
 @property (nonatomic, assign) BOOL showPercent;
 
 /**
+ * Color of the background circle.
+ */
+@property (nonatomic, assign) CGColorRef fillColor;
+
+/**
+ * Color of the circular progress indicator stroke.
+ */
+@property (nonatomic, assign) CGColorRef strokeColor;
+
+/**
+ * Color of the progress text.
+ */
+@property (nonatomic, assign) CGColorRef textColor;
+
+/**
  * Custom drawing.
  */
 - (void)drawInContext:(CGContextRef)ctx;
