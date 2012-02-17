@@ -24,14 +24,14 @@
 /* Begin PBXFileReference section */
 		8FB340F214EC3A17001A40EF /* SPOptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOptionController.h; sourceTree = "<group>"; };
 		8FB340F314EC3A17001A40EF /* SPOptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOptionController.m; sourceTree = "<group>"; };
-		8FE7BEE514E5CC5A008D4BDE /* EX005.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EX005.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE7BEE514E5CC5A008D4BDE /* RotaryProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotaryProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE7BEE914E5CC5A008D4BDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8FE7BEEB14E5CC5A008D4BDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8FE7BEED14E5CC5A008D4BDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8FE7BEF114E5CC5A008D4BDE /* EX005-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EX005-Info.plist"; sourceTree = "<group>"; };
+		8FE7BEF114E5CC5A008D4BDE /* RotaryProgress-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RotaryProgress-Info.plist"; sourceTree = "<group>"; };
 		8FE7BEF314E5CC5A008D4BDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8FE7BEF514E5CC5A008D4BDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8FE7BEF714E5CC5A008D4BDE /* EX005-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EX005-Prefix.pch"; sourceTree = "<group>"; };
+		8FE7BEF714E5CC5A008D4BDE /* RotaryProgress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RotaryProgress-Prefix.pch"; sourceTree = "<group>"; };
 		8FE7BEF814E5CC5A008D4BDE /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		8FE7BEF914E5CC5A008D4BDE /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
 		8FE7BF2114E5CEDC008D4BDE /* SPProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPProgressView.h; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		8FE7BEDA14E5CC59008D4BDE = {
 			isa = PBXGroup;
 			children = (
-				8FE7BEEF14E5CC5A008D4BDE /* EX005 */,
+				8FE7BEEF14E5CC5A008D4BDE /* RotaryProgress */,
 				8FE7BEE814E5CC5A008D4BDE /* Frameworks */,
 				8FE7BEE614E5CC5A008D4BDE /* Products */,
 			);
@@ -70,7 +70,7 @@
 		8FE7BEE614E5CC5A008D4BDE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FE7BEE514E5CC5A008D4BDE /* EX005.app */,
+				8FE7BEE514E5CC5A008D4BDE /* RotaryProgress.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8FE7BEEF14E5CC5A008D4BDE /* EX005 */ = {
+		8FE7BEEF14E5CC5A008D4BDE /* RotaryProgress */ = {
 			isa = PBXGroup;
 			children = (
 				8FE7BEF814E5CC5A008D4BDE /* SPAppDelegate.h */,
@@ -101,16 +101,16 @@
 				8FB340F214EC3A17001A40EF /* SPOptionController.h */,
 				8FB340F314EC3A17001A40EF /* SPOptionController.m */,
 			);
-			path = EX005;
+			path = RotaryProgress;
 			sourceTree = "<group>";
 		};
 		8FE7BEF014E5CC5A008D4BDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8FE7BEF114E5CC5A008D4BDE /* EX005-Info.plist */,
+				8FE7BEF114E5CC5A008D4BDE /* RotaryProgress-Info.plist */,
 				8FE7BEF214E5CC5A008D4BDE /* InfoPlist.strings */,
 				8FE7BEF514E5CC5A008D4BDE /* main.m */,
-				8FE7BEF714E5CC5A008D4BDE /* EX005-Prefix.pch */,
+				8FE7BEF714E5CC5A008D4BDE /* RotaryProgress-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8FE7BEE414E5CC5A008D4BDE /* EX005 */ = {
+		8FE7BEE414E5CC5A008D4BDE /* RotaryProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FE7BF1B14E5CC5A008D4BDE /* Build configuration list for PBXNativeTarget "EX005" */;
+			buildConfigurationList = 8FE7BF1B14E5CC5A008D4BDE /* Build configuration list for PBXNativeTarget "RotaryProgress" */;
 			buildPhases = (
 				8FE7BEE114E5CC5A008D4BDE /* Sources */,
 				8FE7BEE214E5CC5A008D4BDE /* Frameworks */,
@@ -130,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = EX005;
-			productName = EX005;
-			productReference = 8FE7BEE514E5CC5A008D4BDE /* EX005.app */;
+			name = RotaryProgress;
+			productName = RotaryProgress;
+			productReference = 8FE7BEE514E5CC5A008D4BDE /* RotaryProgress.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +143,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 8FE7BEDF14E5CC59008D4BDE /* Build configuration list for PBXProject "EX005" */;
+			buildConfigurationList = 8FE7BEDF14E5CC59008D4BDE /* Build configuration list for PBXProject "RotaryProgress" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -155,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FE7BEE414E5CC5A008D4BDE /* EX005 */,
+				8FE7BEE414E5CC5A008D4BDE /* RotaryProgress */,
 			);
 		};
 /* End PBXProject section */
@@ -257,8 +257,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EX005/EX005-Prefix.pch";
-				INFOPLIST_FILE = "EX005/EX005-Info.plist";
+				GCC_PREFIX_HEADER = "RotaryProgress/RotaryProgress-Prefix.pch";
+				INFOPLIST_FILE = "RotaryProgress/RotaryProgress-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -269,8 +269,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EX005/EX005-Prefix.pch";
-				INFOPLIST_FILE = "EX005/EX005-Info.plist";
+				GCC_PREFIX_HEADER = "RotaryProgress/RotaryProgress-Prefix.pch";
+				INFOPLIST_FILE = "RotaryProgress/RotaryProgress-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -280,7 +280,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FE7BEDF14E5CC59008D4BDE /* Build configuration list for PBXProject "EX005" */ = {
+		8FE7BEDF14E5CC59008D4BDE /* Build configuration list for PBXProject "RotaryProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FE7BF1914E5CC5A008D4BDE /* Debug */,
@@ -289,7 +289,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FE7BF1B14E5CC5A008D4BDE /* Build configuration list for PBXNativeTarget "EX005" */ = {
+		8FE7BF1B14E5CC5A008D4BDE /* Build configuration list for PBXNativeTarget "RotaryProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FE7BF1C14E5CC5A008D4BDE /* Debug */,

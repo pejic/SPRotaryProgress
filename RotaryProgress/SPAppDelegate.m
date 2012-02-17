@@ -1,6 +1,6 @@
 //
 //  SPAppDelegate.m
-//  EX005
+//  RotaryProgress
 //
 //  Created by Slobodan Pejic on 12-02-10.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
