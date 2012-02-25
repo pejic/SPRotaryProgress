@@ -7,6 +7,7 @@
 //
 
 #import "SPProgressLayer.h"
+#import <UIKit/UIStringDrawing.h>
 
 @implementation SPProgressLayer
 
@@ -87,6 +88,8 @@
 
 	if (_showPercent) {
 		CGContextSelectFont(g, "Helvetica", 12, kCGEncodingMacRoman);
+		UIFont *font = [UIFont fontWithName:@"Helvetica"
+					       size:12.0];
 		CGContextSetTextDrawingMode(g, kCGTextFill);
 		CGContextSetFillColorWithColor(g, _textColor);
 		CGAffineTransform tt = CGContextGetTextMatrix(g);
@@ -96,14 +99,12 @@
 		char buff[24] = "";
 		int percent = (int)(_progress * 100 + 0.5);
 		sprintf(buff, "%d%%", percent);
-		if (percent < 10) {
-			CGContextShowTextAtPoint(g, c.x-2.2, c.y+6,
-						 buff, strlen(buff));
-		}
-		else {
-			CGContextShowTextAtPoint(g, c.x-8, c.y+6, buff,
-						 strlen(buff));
-		}
+		NSString *nsbuff = [NSString
+			stringWithCString:buff
+				 encoding:NSASCIIStringEncoding];
+		CGSize size = [nsbuff sizeWithFont:font];
+		CGContextShowTextAtPoint(g, c.x-size.width+14, c.y+6,
+					 buff, strlen(buff));
 	}
 }
 
